@@ -1,0 +1,17 @@
+<nav class="nav-bar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><span class="text-warning">S</span>360</a>
+        </div>
+        <div class="nav-bar">
+            <ul class="nav navbar-nav">
+                <li><a [routerLink]=" ['./'] ">Index</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+    <router-outlet></router-outlet>
+</main>
+<pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
+  

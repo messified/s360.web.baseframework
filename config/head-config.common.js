@@ -33,9 +33,18 @@ module.exports = {
     { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/assets/icon/favicon-32x32.png' },
     { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/assets/icon/favicon-96x96.png' },
     { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/assets/icon/favicon-16x16.png' },
+    { rel: 'icon', href: 'data:;base64,iVBORw0KGgo=' },
 
     /** <link> tags for a Web App Manifest **/
-    { rel: 'manifest', href: '/assets/manifest.json' }
+    { rel: 'manifest', href: '/assets/manifest.json' },
+
+    /**
+     * <link> tags for stylesheets
+     */
+    { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto:400,300,700' },
+    { rel: 'stylesheet', href: '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
+    { rel: 'stylesheet', href: '/assets/css/style.css' },
+    { rel: 'stylesheet', href: '/assets/css/prettify-angulario.css' }
   ],
   meta: [
     { name: 'msapplication-TileColor', content: '#00bcd4' },
