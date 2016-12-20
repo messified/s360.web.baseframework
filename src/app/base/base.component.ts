@@ -9,10 +9,10 @@ import { AppState } from '../app.service';
 
 export class BaseComponent {
     // Set our default values
-    localState = { value: '' };
+    localState = { value: 'src/app/base/base.component.ts' };
     // TypeScript public modifiers
     constructor(public appState: AppState) {
-
+        appState._state = this.localState;
     }
 
     ngOnInit() {

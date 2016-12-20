@@ -44,7 +44,8 @@ module.exports = {
     { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto:400,300,700' },
     { rel: 'stylesheet', href: '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
     { rel: 'stylesheet', href: '/assets/css/style.css' },
-    { rel: 'stylesheet', href: '/assets/css/prettify-angulario.css' }
+    { rel: 'stylesheet', href: '/assets/css/prettify-angulario.css' },
+    { rel: 'stylesheet', href: '/assets/css/theme.min.css' }
   ],
   meta: [
     { name: 'msapplication-TileColor', content: '#00bcd4' },
