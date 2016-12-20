@@ -16,8 +16,8 @@ import { AppState } from './app.service';
 })
 export class AppComponent {
   angularclassLogo = 'assets/img/angularclass-avatar.png';
-  name = 'Angular 2 Webpack Starter';
-  url = 'https://twitter.com/AngularClass';
+  name = 'S360 Base Framework';
+  url = 'https://s360.development.stationcasinos.net/desktop';
 
   constructor(
     public appState: AppState) {
