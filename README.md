@@ -1,7 +1,7 @@
 # S360 Base Framework
 
 <p align="center">
-  <img alt="Screenshot" src="https://s3.amazonaws.com/scasinos-dev/github.png">
+  <img alt="Screenshot" src="https://s3.amazonaws.com/scasinos-dev/github-new.png">
   
 </p>
 
