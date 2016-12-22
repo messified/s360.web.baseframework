@@ -1,0 +1,35 @@
+{
+  "name": "s360 Base Framework",
+  "version": "1.0.0",
+  "description": "Boilerplate UI",
+  "author": "Station Casinos",
+  "updatedBy": "Jesse Reese",
+  "namespace": "s360.web.baseframework",
+  "actions": [
+    {
+      "action": "s360.web.baseframework",
+      "description": "Ability to process receipts",
+      "displayName": "Process Receipts",
+      "properties" : []
+    }
+  ],
+  "appSettings": [
+  ],
+  "menu": {
+    "menu_key":"base_framework",
+    "group": "base_framework",
+    "menu_icon":"fa fa-file-code-o",
+    "app": "Base Framework",
+    "baseUrl":"http://localhost:3000/app/",
+    "menuItems" : [
+      {
+        "menu_item_key":"customercontext.view",
+        "menu_item_type": "event",
+        "displayName": "Scan Receipt For Points",
+        "route":  "customer",
+        "description": "Scan Receipt For Points",
+        "action": "s360.web.baseframework"
+      }
+    ]
+  }
+}
