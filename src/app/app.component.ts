@@ -7,6 +7,7 @@ import { AppState } from './app.service';
  */
 @Component({
   selector: 'app',
+  styleUrls: ['../assets/css/global.scss'],
   encapsulation: ViewEncapsulation.None,
   templateUrl: './app.component.html',
 })

@@ -19,16 +19,21 @@ import { CustomerService } from './services/customer.service';
 import { EventService } from './events/services/event.service';
 import { UserStateStore } from './state/store/user.state.store';
 import { CustomerStateStore } from './state/store/customer.state.store';
+import { NavRouteStateStore } from './state/store/route.state.store';
+import { AppConfig } from './app.config';
+import { AlertModule, DatepickerModule } from 'ng2-bootstrap';
 
 // Application wide providers
 const APP_PROVIDERS = [
   ...APP_RESOLVER_PROVIDERS,
   AppState,
+  AppConfig,
   AppSettingsService,
   CustomerService,
   CustomerStateStore,
   UserStateStore,
-  EventService
+  EventService,
+  NavRouteStateStore,
 ];
 
 type StoreType = {
@@ -49,6 +54,8 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
+    AlertModule.forRoot(),
+    DatepickerModule.forRoot(),
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection

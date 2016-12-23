@@ -145,7 +145,14 @@ module.exports = function (options) {
           test: /\.(jpg|png|gif)$/,
           use: 'file-loader'
         },
-
+        {
+          test: /\.scss$/,
+          loaders: ['raw-loader', 'sass-loader']
+        },
+        {
+          test: /\.(woff2?|ttf|eot|svg)$/,
+          loader: 'url?limit=10000'
+        },
       ],
 
     },
@@ -160,6 +167,13 @@ module.exports = function (options) {
         path: helpers.root('dist'),
         filename: 'webpack-assets.json',
         prettyPrint: true
+      }),
+
+      new webpack.ProvidePlugin({
+        jQuery: 'jquery',
+        $: 'jquery',
+        jquery: 'jquery',
+        'window.jQuery': 'jquery'
       }),
 
       /*

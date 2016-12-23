@@ -10,15 +10,16 @@ import {CustomerState} from '../../state/customer.state';
 
 export class Customer {
 	noCustomerContextShow: boolean = true;
-
+	processReceiptView: boolean = false;
 	constructor (private customerStateStore: CustomerStateStore) {
 		this.customerStateStore.customerState.subscribe(
 			(customerState: CustomerState) => {
 
 				console.log('customer state::' + customerState.playerID);
 
-				if (customerState.playerID !== null) {
-					this.noCustomerContextShow = false;
+				if (customerState.playerID === null) {
+					this.noCustomerContextShow = true;
+					this.processReceiptView = true;
 				}
 			}
 		);

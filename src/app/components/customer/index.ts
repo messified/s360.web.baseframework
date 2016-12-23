@@ -3,6 +3,10 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Customer } from './customer.component';
+import { ProcessReceipt } from './processreceipt/processreceipt.component';
+import { ProcessForm } from './processreceipt/processform/processform.component';
+import { ProcessResults } from './processreceipt/processresults/processresults.component';
+import 'parsleyjs';
 
 console.log('`Customer` bundle loaded asynchronously');
 // async components must be named routes for WebpackAsyncRoute
@@ -12,7 +16,10 @@ export const routes = [
 
 @NgModule({
     declarations: [
-        Customer
+        Customer,
+        ProcessReceipt,
+        ProcessForm,
+        ProcessResults
     ],
     imports: [
         CommonModule,
