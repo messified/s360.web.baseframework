@@ -1,4 +1,4 @@
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 body {
   font-family: "Open Sans", sans-serif!important;
@@ -14,7 +14,8 @@ body,html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eeeeee!important;
 }
 
 h1 {
