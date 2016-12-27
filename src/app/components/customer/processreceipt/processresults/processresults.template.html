@@ -3,7 +3,9 @@
 </div>
 <section class="widget">
     <div class="widget-body-container">
-        <h4 *ngIf="errorMessageShow" class="text-left mt-lg">Sorry, we're unable to locate your receipt.</h4>
+        <div class="layout_spacer">
+            <h4 *ngIf="errorMessageShow" class="text-left mt-lg">Sorry, we're unable to locate your receipt.</h4>
+        </div>
         <div *ngIf="receipts">
             <div class="layout_spacer">
                 <h5>Player ID: <strong><span class="text-default">{{ (activeCustomer | async)?.playerID }}</span></strong></h5>

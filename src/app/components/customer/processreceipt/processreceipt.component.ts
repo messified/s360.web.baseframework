@@ -16,9 +16,9 @@ export class ProcessReceipt {
   processResultsShow: boolean = true;
   constructor(private receiptProcessService: ReceiptProcessService){
     this.receiptProcessService.receiptProcessResults.subscribe(
-      (receiptprocess: ReceiptProcessResults) => {
-        console.log('Received Results::'+receiptprocess.processed);
-      if (receiptprocess.processed){
+      (receiptProcess: ReceiptProcessResults) => {
+        console.log('Received Results::'+receiptProcess.processed);
+      if (receiptProcess.processed){
         this.processFormShow = false;
         this.processResultsShow = true;
       } else {

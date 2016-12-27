@@ -21,7 +21,7 @@ export class ProcessForm implements AfterViewInit {
     formValid: any;
     barcode: string;
     playerID: string;
-    receiptDate: Date = null;
+    receiptDate: any = null;
     formattedDate: string = null;
 
     constructor(private receiptProcessService: ReceiptProcessService,
@@ -37,11 +37,12 @@ export class ProcessForm implements AfterViewInit {
     ngOnInit(): void {
         jQuery('.parsleyjs').parsley();
         this.formValid = jQuery('.parsleyjs').parsley();
+        //jQuery('#datetimepicker1').datetimepicker();
     }
 
-    ngAfterViewInit() {            
-        this.vc.first.nativeElement.focus();
-    }
+    ngAfterViewInit(): void {
+
+	}
 
     validateForm() {
         console.log("validate form" );
@@ -50,7 +51,7 @@ export class ProcessForm implements AfterViewInit {
 
         if (this.formValid.isValid()) {
             if (this.receiptDate !== null) {
-                let selectedDate = this.receiptDate.getTime();
+                let selectedDate = new Date(this.receiptDate.formatted).getTime() / 1000;
                 let timestamp = new Date().getTime() - (7 * 24 * 60 * 60 * 1000);
                 if (selectedDate < timestamp) {
                     console.log('Receipt is older than 7 days.');
@@ -59,7 +60,7 @@ export class ProcessForm implements AfterViewInit {
                     return 0;
                 }
 
-                this.formattedDate = this.receiptDate.toISOString().slice(0, 10);
+                this.formattedDate = this.receiptDate.formatted;
             }
 
             this.processForm();

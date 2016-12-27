@@ -6,6 +6,9 @@ import { Customer } from './customer.component';
 import { ProcessReceipt } from './processreceipt/processreceipt.component';
 import { ProcessForm } from './processreceipt/processform/processform.component';
 import { ProcessResults } from './processreceipt/processresults/processresults.component';
+import { DatePickerModule } from 'ng2-datepicker';
+
+import '../../../../node_modules/bootstrap-datepicker/js/bootstrap-datepicker.js';
 import 'parsleyjs';
 
 console.log('`Customer` bundle loaded asynchronously');
@@ -19,11 +22,12 @@ export const routes = [
         Customer,
         ProcessReceipt,
         ProcessForm,
-        ProcessResults
+        ProcessResults,
     ],
     imports: [
         CommonModule,
         FormsModule,
+        DatePickerModule,
         RouterModule.forChild(routes),
     ]
 })
