@@ -11,9 +11,9 @@ import {BehaviorSubject} from 'rxjs/Rx';
 import {UserStateStore} from '../state/store/user.state.store';
 import {UserState} from '../state/user.state';
 import {AppConfig} from '../app.config';
-import {EventService} from '../events/services/event.service'
-import {ToastEvent, ToastOptions} from '../events/eventbase';
-import {AppSettingsService} from '../events/services/appsettings.service';
+import {EventService} from 'stations-events/services/event.service'
+import {ToastEvent, ToastOptions} from 'stations-events/eventbase';
+import {AppSettingsService} from 'stations-events/services/appsettings.service';
 
 @Injectable()
 export class ReceiptProcessService {

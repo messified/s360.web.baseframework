@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { EventService } from '../events/services/event.service';
-import { CustomerContext } from '../events/eventbase';
-import { GetCustomerContext } from '../events/eventbase';
+import { EventService } from 'stations-events/services/event.service';
+import { CustomerContext, GetCustomerContext } from 'stations-events/eventbase';
 import { CustomerStateStore } from '../state/store/customer.state.store';
 import { CustomerState, initialCustomerState } from '../state/customer.state';
 

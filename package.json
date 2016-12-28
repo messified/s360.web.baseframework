@@ -83,6 +83,7 @@
     "ng2-datepicker": "^1.4.7",
     "parsleyjs": "^2.6.0",
     "rxjs": "5.0.0-beta.12",
+    "stations-events": "^1.0.1",
     "zone.js": "~0.6.26"
   },
   "devDependencies": {
