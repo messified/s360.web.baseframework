@@ -27,8 +27,8 @@ cd s360.web.baseframework
 # install the repo with npm
 npm install
 
-# start the server
-npm start
+# Start Application
+npm run server
 
 # use Hot Module Replacement
 npm run server:dev:hmr
