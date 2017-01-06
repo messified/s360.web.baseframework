@@ -7,11 +7,11 @@ export const ROUTES: Routes = [
 		path: '', redirectTo: 'app', pathMatch: 'full'
 	},
 	{
-		path: 'app', loadChildren: () => System.import('./components/demo')
+		path: 'app', loadChildren: () => System.import('./bundles/demo')
 		.then((comp: any) => comp.default),
 	},
 	{
-		path: 'app/customer', loadChildren: () => System.import('./components/customer')
+		path: 'app/customer', loadChildren: () => System.import('./bundles/customer')
 			.then((comp: any) => comp.default),
 	}
 ];
