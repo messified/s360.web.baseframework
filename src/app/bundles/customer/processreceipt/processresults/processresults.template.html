@@ -8,8 +8,10 @@
         </div>
         <div *ngIf="receipts">
             <div class="layout_spacer">
-                <h5>Player ID: <strong><span class="text-default">{{ (activeCustomer | async)?.playerID }}</span></strong></h5>
-                <h5>Customer: <strong><span class="text-primary">{{ (activeCustomer | async)?.firstName }} {{ (activeCustomer | async)?.lastName }}</span></strong></h5>
+                <h5>Player ID: <strong><span
+                        class="text-default">{{ (activeCustomer | async)?.playerID }}</span></strong></h5>
+                <h5>Customer: <strong><span class="text-primary">{{ (activeCustomer | async)?.firstName }} {{ (activeCustomer | async)?.lastName }}</span></strong>
+                </h5>
                 <h5>Points Earned:
                     <strong><span class="font-color_green">{{pointsEarned}}</span></strong>
                 </h5>

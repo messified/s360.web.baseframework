@@ -6,12 +6,12 @@ import { BehaviorSubject } from 'rxjs/Rx';
 export class CustomerStateStore {
     private _customerState: BehaviorSubject<CustomerState> = new BehaviorSubject(initialCustomerState);
 
-    get customerState() {
+    get customerState () {
         return this._customerState.asObservable();
     }
 
-    updateCustomerState( customer: CustomerState ) {
+    updateCustomerState (customer: CustomerState) {
         console.log('Updating Customer State:' + JSON.stringify(customer));
-        this._customerState.next( customer );
+        this._customerState.next(customer);
     }
 }

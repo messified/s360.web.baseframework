@@ -1,11 +1,10 @@
 export class CustomerState {
 
-    constructor(
-    	public playerID: string,
-        public firstName: string,
-        public lastName: string,
-        public dob: string,
-        public address: any) {
+    constructor (public playerID: string,
+                 public firstName: string,
+                 public lastName: string,
+                 public dob: string,
+                 public address: any) {
     }
 
 }

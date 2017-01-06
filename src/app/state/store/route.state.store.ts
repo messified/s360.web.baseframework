@@ -6,14 +6,14 @@ import { BehaviorSubject } from 'rxjs/Rx';
 @Injectable()
 export class NavRouteStateStore {
     private _routeState: BehaviorSubject<NavRoute> =
-    new BehaviorSubject(initialNavRoute);
+        new BehaviorSubject(initialNavRoute);
 
-    get routeState() {
+    get routeState () {
         return this._routeState.asObservable();
     }
 
-    updateRouteState( route: NavRoute ) {
+    updateRouteState (route: NavRoute) {
         console.log('Updating route State:' + JSON.stringify(route));
-        this._routeState.next( route );
+        this._routeState.next(route);
     }
 }

@@ -1,7 +1,7 @@
 export class NavRoute {
-	route: string;
+    route: string;
 }
 
 export const initialNavRoute = {
-	route: null,
+    route: null,
 };

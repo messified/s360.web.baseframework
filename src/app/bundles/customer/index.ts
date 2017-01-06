@@ -14,7 +14,7 @@ import 'parsleyjs';
 console.log('`Customer` bundle loaded asynchronously');
 // async components must be named routes for WebpackAsyncRoute
 export const routes = [
-    { path: '', component: Customer, pathMatch: 'full' }
+    {path: '', component: Customer, pathMatch: 'full'}
 ];
 
 @NgModule({

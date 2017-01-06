@@ -1,5 +1,7 @@
-import { Component, ViewEncapsulation, AfterContentInit,
-  AfterViewChecked, AfterViewInit, ViewChild, ViewChildren} from '@angular/core';
+import {
+    Component, ViewEncapsulation, AfterContentInit,
+    AfterViewChecked, AfterViewInit, ViewChild, ViewChildren
+} from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { ReceiptProcessService } from '../../../../services/receiptprocess.service';
 import { CustomerState } from '../../../../state/customer.state';
@@ -24,9 +26,8 @@ export class ProcessForm implements AfterViewInit {
     receiptDate: any = null;
     formattedDate: string = null;
 
-    constructor(private receiptProcessService: ReceiptProcessService,
-        private customerStateStore: CustomerStateStore
-    ) {
+    constructor (private receiptProcessService: ReceiptProcessService,
+                 private customerStateStore: CustomerStateStore) {
         this.customerStateStore.customerState.subscribe(
             (customerState: CustomerState) => {
                 this.playerID = customerState.playerID;
@@ -34,18 +35,18 @@ export class ProcessForm implements AfterViewInit {
         );
     }
 
-    ngOnInit(): void {
+    ngOnInit (): void {
         jQuery('.parsleyjs').parsley();
         this.formValid = jQuery('.parsleyjs').parsley();
         //jQuery('#datetimepicker1').datetimepicker();
     }
 
-    ngAfterViewInit(): void {
+    ngAfterViewInit (): void {
 
-	}
+    }
 
-    validateForm() {
-        console.log("validate form" );
+    validateForm () {
+        console.log("validate form");
 
         jQuery('.parsleyjs').parsley().validate();
 
@@ -67,7 +68,7 @@ export class ProcessForm implements AfterViewInit {
         }
     }
 
-    processForm() {
+    processForm () {
         console.log({
             'playerId': this.playerID,
             'receiptDate': this.formattedDate,
@@ -81,7 +82,7 @@ export class ProcessForm implements AfterViewInit {
         });
     }
 
-    clearForm() {
+    clearForm () {
         this.playerID = null;
         this.barcode = null;
         this.receiptDate = null;

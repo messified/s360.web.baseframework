@@ -6,23 +6,22 @@ import { AppState } from './app.service';
  * Top Level Component
  */
 @Component({
-  selector: 'app',
-  styleUrls: ['../assets/scss/global.scss'],
-  encapsulation: ViewEncapsulation.None,
-  templateUrl: './app.component.html',
+    selector: 'app',
+    styleUrls: ['../assets/scss/global.scss'],
+    encapsulation: ViewEncapsulation.None,
+    templateUrl: './app.component.html',
 })
 export class AppComponent {
-  name = 'S360 Base Framework';
-  url = 'https://s360.development.stationcasinos.net/desktop';
+    name = 'S360 Base Framework';
+    url = 'https://s360.development.stationcasinos.net/desktop';
 
-  constructor(
-    public appState: AppState) {
+    constructor (public appState: AppState) {
 
-  }
+    }
 
-  ngOnInit() {
-    console.log('Initial App State', this.appState.state);
-  }
+    ngOnInit () {
+        console.log('Initial App State', this.appState.state);
+    }
 
 }
 
