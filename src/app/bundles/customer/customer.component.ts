@@ -9,8 +9,7 @@ import { CustomerState } from '../../state/customer.state';
 })
 
 export class Customer {
-    noCustomerContextShow: boolean = true;
-    processReceiptView: boolean = true;
+    noCustomerContextShow: boolean = false;
 
     constructor (private customerStateStore: CustomerStateStore) {
         this.customerStateStore.customerState.subscribe(
@@ -20,7 +19,6 @@ export class Customer {
 
                 if (customerState.playerID === null) {
                     this.noCustomerContextShow = true;
-                    this.processReceiptView = false;
                 }
             }
         );
