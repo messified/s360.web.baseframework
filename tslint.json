@@ -13,7 +13,6 @@
     "no-any": false,
     "no-inferrable-types": false,
     "no-internal-module": true,
-    "no-var-requires": false,
     "typedef": false,
     "typedef-whitespace": [
       true,
@@ -59,7 +58,6 @@
     "no-switch-case-fall-through": true,
     "no-unreachable": true,
     "no-unused-expression": true,
-    "no-unused-variable": false,
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "radix": true,
