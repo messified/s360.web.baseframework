@@ -2,7 +2,7 @@
 
 <p align="center">
   <img alt="Screenshot" src="https://s3.amazonaws.com/scasinos-dev/github-new.png">
-  
+
 </p>
 
 >Forked from Angular2 Webpack Starter
@@ -148,30 +148,6 @@ npm run test
 npm run watch:test
 ```
 
-### run end-to-end tests
-```bash
-# make sure you have your server running in another terminal
-npm run e2e
-```
-
-### run webdriver (for end-to-end)
-```bash
-npm run webdriver:update
-npm run webdriver:start
-```
-
-### run Protractor's elementExplorer (for end-to-end)
-```bash
-npm run webdriver:start
-# in another terminal
-npm run e2e:live
-```
-
-### build Docker
-```bash
-npm run build:docker
-```
-
 # Configuration
 Configuration files live in `config/` we are currently using webpack, karma, and protractor for different stages of your application
 
@@ -197,18 +173,18 @@ We have good experience using these editors:
 * [Sublime Text](http://www.sublimetext.com/3) with [Typescript-Sublime-Plugin](https://github.com/Microsoft/Typescript-Sublime-plugin#installation)
 
 ### Visual Studio Code + Debugger for Chrome
-> Install [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) and see docs for instructions to launch Chrome 
+> Install [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) and see docs for instructions to launch Chrome
 
 The included `.vscode` automatically connects to the webpack development server on port `3000`.
 
 # Types
 > When you include a module that doesn't include Type Definitions inside of the module you can include external Type Definitions with @types
 
-i.e, to have youtube api support, run this command in terminal: 
+i.e, to have youtube api support, run this command in terminal:
 ```shell
 npm i @types/youtube @types/gapi @types/gapi.youtube
-``` 
-In some cases where your code editor doesn't support Typescript 2 yet or these types weren't listed in ```tsconfig.json```, add these to **"src/custom-typings.d.ts"** to make peace with the compile check: 
+```
+In some cases where your code editor doesn't support Typescript 2 yet or these types weren't listed in ```tsconfig.json```, add these to **"src/custom-typings.d.ts"** to make peace with the compile check:
 ```es6
 import '@types/gapi.youtube';
 import '@types/gapi';
