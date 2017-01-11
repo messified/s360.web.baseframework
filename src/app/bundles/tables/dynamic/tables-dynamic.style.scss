@@ -1,6 +1,6 @@
+@import "../../../../assets/scss/variables";
 @import "../../../../../node_modules/bootstrap/scss/_variables";
 @import "../../../../../node_modules/bootstrap/scss/mixins";
-@import "../../../../assets/scss/variables";
 
 mfDefaultSorter > a {
   color: $gray;
@@ -89,7 +89,7 @@ mfDefaultSorter > a {
     margin-left: 0.3em;
     border: 0;
     content: "";
-    font: 15px $FontAwesome;
+    font: 15px FontAwesome;
   }
 
   .ascending .sort-caret {

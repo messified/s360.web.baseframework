@@ -10,11 +10,14 @@
 @import "../../../node_modules/animate.css/animate";
 @import "../../../node_modules/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox";
 @import "../../../node_modules/bootstrap-select/dist/css/bootstrap-select";
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/mixins";
+
 @import "bootstrap-override";
 @import "libs-override";
 
+
+//end custom libs
+
+//everything below this line is required for essential styling
 @import "font";
 @import "general";
 @import "global-transitions";
