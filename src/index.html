@@ -23,7 +23,21 @@
 <body>
 <div class="container-fluid content">
   <app>
-    Loading...
+   <style>
+      /*
+       * Inline css to add simple styles for loader.
+       * Is going to be replaced by angular after bootstrap.
+       */
+      app {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        padding-top: 45vh;
+        text-align: center;
+        background-color: #eee;
+        font: 20px sans-serif;
+      }
+    </style>
+    <span style='color: #dd5826'>S</span>360
   </app>
 
   <!-- Google Analytics: change UA-71073175-1 to be your site's ID -->
