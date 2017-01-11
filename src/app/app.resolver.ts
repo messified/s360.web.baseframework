@@ -1,20 +1,20 @@
-import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import 'rxjs/add/observable/of';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class DataResolver implements Resolve<any> {
-    constructor () {
+	constructor() {
+		// empty
+	}
 
-    }
-
-    resolve (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-        return Observable.of({res: 'I am data'});
-    }
+	public resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<{ res: string }> {
+		return Observable.of({ res: 'I am data' });
+	}
 }
 
 // an array of services to resolve routes with data
 export const APP_RESOLVER_PROVIDERS = [
-    DataResolver
+	DataResolver
 ];
