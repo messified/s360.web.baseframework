@@ -88,18 +88,20 @@ $link-color: #218BC3 !default;
 $sidebar-padding-horizontal: 11px;
 $sidebar-icon-state-width: 50px !default;
 $sidebar-slim-scroll-width: 4px;
-$sidebar-width: 0px + $sidebar-slim-scroll-width !default;
+$sidebar-width: 200px + $sidebar-slim-scroll-width !default;
 
 $sidebar-transition-time: .3s !default;
 
-$navbar-height:                    0px !default;
+$navbar-height:                    20px !default;
 $navbar-font-size:              13px !default;
 
 $chat-sidebar-width: 250px + $sidebar-slim-scroll-width !default;
 
-$content-padding-vertical: 0px !default;
+$content-padding-vertical: 0 !default;
 $content-padding-top: $content-padding-vertical + $navbar-height !default;
-$content-padding-horizontal: 0px !default;
+$content-padding-horizontal: 20px !default;
+
+$grid-gutter-width: 30px !default;
 
 //== Panels
 //
@@ -328,6 +330,5 @@ $pagination-disabled-border:           transparent !default;
 // ------------------------
 
 $fa-font-path: "assets/fonts/font-awesome" !default;
-$font-size-sm: 10px;
-$btn-secondary-border: #ccc;
-$text-muted: $brand-info;
+
+

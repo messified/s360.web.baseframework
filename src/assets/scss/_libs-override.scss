@@ -22,6 +22,34 @@
   animation-duration: .5s;
 }
 
+/**
+ * Pace
+ */
+.pace .pace-progress{
+  background: $brand-primary;
+  position: absolute;
+  top: $navbar-height;
+}
+
+.pace .pace-activity{
+  position: absolute;
+  top: 65px;
+  border-width: 1px;
+  left: 15px;
+  right: auto;
+  width: 18px;
+  height: 18px;
+  border-top-color: $brand-primary;
+  border-left-color: $brand-primary;
+}
+
+
+
+.pace .pace-progress-inner{
+  right: -10px;
+  width: 10px;
+}
+
 /***********************/
 /*glyphicons-halflings */
 /***********************/
@@ -42,4 +70,11 @@ button.list-group-item:hover {
   color: #555;
   text-decoration: none;
   background-color: #f5f5f5;
+}
+
+
+/* ng2-select2 */
+
+.select2-container--bootstrap .select2-selection--single {
+  height: 35px !important;
 }

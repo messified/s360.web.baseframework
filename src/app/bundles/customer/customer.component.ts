@@ -5,6 +5,7 @@ import { CustomerStateStore } from '../../state/store/customer.state.store';
 @Component({
 	selector: 'customer',
 	templateUrl: 'customer.template.html',
+	styleUrls: ['customer.style.scss'],
 	encapsulation: ViewEncapsulation.None,
 })
 
