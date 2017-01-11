@@ -1,4 +1,7 @@
 @import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "font";
 
 body {
   font-family: "Open Sans", sans-serif!important;
@@ -34,7 +37,6 @@ section, footer{
 }
 
 .event {
-  background: #fff;
   border-radius: 0.25rem;
   padding: 20px 20px;
   margin: 20px 0;
@@ -50,7 +52,6 @@ section, footer{
   padding: 10px 20px;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
-  background-color: #f3f3f3;
   display: block;
 }
 
@@ -399,7 +400,7 @@ section, footer{
   font-size: 18px;
   color: #1d1d2b;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 3rem;
 }
 
 #main .content-box {
@@ -721,7 +722,7 @@ label {
   margin-bottom: .5rem;
 }
 
-.btn {
+/**.btn {
   display: inline-block;
   font-weight: normal;
   line-height: 1.5;
@@ -742,7 +743,7 @@ label {
   background-color: #dd5826!important;
   border-color: #dd5826!important;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
-}
+}*/
 
 .pull-xs-right {
   float: right !important;

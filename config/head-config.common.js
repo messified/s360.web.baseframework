@@ -43,8 +43,8 @@ module.exports = {
      */
     { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto:400,300,700' },
     { rel: 'stylesheet', href: 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' },
+    { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
     { rel: 'stylesheet', href: '/assets/css/glyphicons.css' },
-    { rel: 'stylesheet', href: '/assets/scss/application.scss' },
   ],
   meta: [
     { name: 'msapplication-TileColor', content: '#00bcd4' },

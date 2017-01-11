@@ -1021,7 +1021,7 @@ app, .app {
 
 .widget{
   position: relative;
-  margin-bottom: $grid-gutter-width;
+  margin-bottom: 20px;
   padding: $widget-padding-vertical $widget-padding-horizontal;
   background: $widget-bg-color;
   border-radius: $border-radius-sm;
@@ -1288,7 +1288,7 @@ app, .app {
 .widget-placeholder{
   background:  rgba($white, .4);
   border: 1px dashed $gray-light;
-  margin: -1px -1px calc(#{$grid-gutter-width} - 1px) -1px;
+  margin: -1px -1px calc(#{20px} - 1px) -1px;
 }
 
 /***********************/
