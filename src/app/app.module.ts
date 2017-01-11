@@ -4,14 +4,9 @@ import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { PreloadAllModules, RouterModule } from '@angular/router';
 import { createInputTransfer, createNewHosts, removeNgStyles } from '@angularclass/hmr';
-
-/*
- * Platform and Environment providers/directives/pipes
- */
 import { AlertModule, DatepickerModule } from 'ng2-bootstrap';
 import { AppSettingsService } from 'stations-events/services/appsettings.service';
 import { EventService } from 'stations-events/services/event.service';
-// App is our top level component
 import { AppComponent } from './app.component';
 import { AppConfig } from './app.config';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
@@ -23,7 +18,6 @@ import { CustomerStateStore } from './state/store/customer.state.store';
 import { NavRouteStateStore } from './state/store/route.state.store';
 import { UserStateStore } from './state/store/user.state.store';
 
-// Application wide providers
 const APP_PROVIDERS = [
 	...APP_RESOLVER_PROVIDERS,
 	AppState,

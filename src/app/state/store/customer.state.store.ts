@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs/Rx';
 import { CustomerState, initialCustomerState } from '../customer.state';
-import { BehaviorSubject } from 'rxjs/Rx';
 
 @Injectable()
 export class CustomerStateStore {
-    private _customerState: BehaviorSubject<CustomerState> = new BehaviorSubject(initialCustomerState);
+	private _customerState: BehaviorSubject<CustomerState> = new BehaviorSubject(initialCustomerState);
 
-    get customerState () {
-        return this._customerState.asObservable();
-    }
+	get customerState(): Observable<CustomerState> {
+		return this._customerState.asObservable();
+	}
 
-    updateCustomerState (customer: CustomerState) {
-        console.log('Updating Customer State:' + JSON.stringify(customer));
-        this._customerState.next(customer);
-    }
+	public updateCustomerState(customer: CustomerState): void {
+		console.log('Updating Customer State:' + JSON.stringify(customer));
+		this._customerState.next(customer);
+	}
 }
