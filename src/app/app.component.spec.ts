@@ -9,20 +9,27 @@ describe('App', () => {
 	// Configure component
 	beforeEach(() => TestBed.configureTestingModule({
 		providers: [
+			AppComponent,
 			AppState,
-			AppComponent
 		]
 	}));
 
 	// Initialize dependencies
-	beforeEach(inject([AppComponent], (appComponent) => {
-		_classUnderTest = appComponent;
-	}));
+	beforeEach(() => {
+		_classUnderTest = TestBed.get(AppComponent);
+	});
 
 
 	it('should have a url', (done) => {
 
 		expect(_classUnderTest.url).toEqual('https://s360.development.stationcasinos.net/desktop');
+
+		done();
+	});
+
+	it('should have a name', (done) => {
+
+		expect(_classUnderTest.name).toEqual('S360 Base Framework');
 
 		done();
 	});
